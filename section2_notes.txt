@@ -1,0 +1,9 @@
+- bank -> representar um recurso exteno ao nosso sistema onde será acessado via API
+
+- repo: https://github.com/marcelosv/ms-communication
+
+- Design for Data Separation -> monolito armazena em um unico banco de dados. com microservices com dois ou mais serviços operando sobre o mesmo armazenamento teremos problemas [inconsistencia de dados] (transações são considerados antipattern)
+
+- existem duas formas: baixe o software ou instale o docker
+- executar comando: docker-compose -f docker-mysql.yml up
+- projeto ms-communication-bank

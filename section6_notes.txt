@@ -1,0 +1,11 @@
+- precisamos saber as portas da aplicação para enviar a compra e saber o status
+- e se subir duas instâncias ? qual porta vamos usar? vai ser erro de porta que esta sendo usada?
+
+- gateway -> é uma interface que recebe chamadas para seus sistemas internos, sendo uma grande porta de entrada
+- porta única e identificar a porta de destino
+- pode atuar de cinco maneiras:
+	- filtro de trafego de chamadas de diferentes meios
+	- única porta de entrada para diversas APIS
+	- componente essesnsial do gerenciameto de APIs, como no API Suite
+	- roteador de tráfego nas APIS e de Rate Limit
+	- mecanismo de segurança, como autenticação, log e muito mais

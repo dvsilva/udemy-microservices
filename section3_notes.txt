@@ -1,0 +1,10 @@
+- buytrip -> iniciar a compra da passagem
+- criar endpoint para registrar pedido da compra. recebe o código da passagem, os dados do cartão e o valor da passagem e devolver uma chave para possíveis consultas posteriormente do status da compra
+
+- stream events -> adicionar informação em alguma fila para que outro sistema possa consumir a fila
+- buytrip somente vai receber a compra, gerar um código, registrar a compra em uma fila e devolver a mensagem para o cliente
+- é diferente de fila simples, a fila por eventos garante escalarmos o sistema que lê a fila, a informação chega somente em um sistema
+- RabbitMQ, Kafka, ActiveMQ ..
+
+-  executar via docker -> docker-compose -f docker-rabbitmq.yml up
+- docker ps ou localhost:8881

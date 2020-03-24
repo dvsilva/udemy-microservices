@@ -1,0 +1,24 @@
+monolito
+- todo código está no mesmo projeto
+- dificil escalar
+- replicar/duplicar o servidor - custo
+- número de clientes
+
+microservice
+- constroi software como suites de serviços de colaboração
+- serviço com unico proposito que execute bem sua tarefa dentro de um nivel de granularidade e suporte mudanças do sistema que são consideradas importantes tatnto em tempo de projeto quantoem tempo de execução
+- o foco principal é tentar constuir software que pode ser adaptar e isto só é possivel se as partes forem pequenas sufucientes par se ajustar às diferenças nas mudanças de sua arquitetura
+- fazer réplicas e escalabilidade
+- poissilita separar responsabilidade
+- fica offline somente a parte que cai
+- sistema/comunicação/infraestrutura/arquitetura complexos
+
+Spring Cloud
+- ferramentas para criarem rapidamente alguns padrões comuns em sistemas distribuidos
+- framework
+- facilita a medida que não precisa gerenciar bibliotecas
+- outros frameworks: golang, wildfly, dropwizard
+- site spring: start.spring.io
+
+- o que vamos desenvolver?
+- sistema de compra de viagem

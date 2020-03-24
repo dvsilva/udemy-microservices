@@ -1,0 +1,13 @@
+- buyprocess -> processa pagamento da passagem
+- vai lera  afila onde estão as compras e ter integração com o sistema Bank para aprovar o pagamento. Após o retorno do banco vai adicionar em uma fila das passagens já processadas
+- caso o bank esteja fora o buyprocess não pode perder a informação, deve posteriormente re-processar a compra
+
+- Design for failure (tolerância a falhas) -> permite que sistemas continuem a operar adequadamente mesmo após falhas de alguns de seus componentes. 
+- a meta para tudo que devemos projetar em torno de tolerância de falha é minimizar a intervenção humana. 
+- implementar rotinas de falha automatica tem que ser parte de cada chamada de serviço que está acontecendo
+
+- hystrix -> adiciona dependências para podermos ativar o circuit breaker. @EnableCircuitBreaker
+- actuator -> inclui varios recursos adicionais para ajudar-lo a monitorar e gerenciar seu aplicativo quando for empurrado para produção
+	- opção: gerenciar e monitorar usando ponots de extemidade HTTP, com JMX ou mesmo por shell remoto (SSH e Telnet).
+	- auditoria, saúde e coleta de métricas podem ser aplicadas automaticamente à sua aplicação
+

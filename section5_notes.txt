@@ -1,0 +1,10 @@
+- feedback vai ser o sistema responsável por ouvir a fila e gravar no redis os dados finalizados
+- criar endpoint que recebera a chave do pagamento e vai retornar dados processados
+
+Redis - é uma fonte aberta (BSD licenciado) armazenamento de estrutura de dados em memória, usando como banco de dados, cache e corretor de mensagens. suporta estrutura de dados como sequencias de caracteres, hashes, listas e conjuntos
+
+- para subir: docker-compose -f docker-redis.yml up
+buyfeedback-12-docker-compose.yml
+
+@RedisHash("compra") - para usar classe de dominio do redis
+
